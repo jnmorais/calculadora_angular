@@ -1,0 +1,43 @@
+<div class="calculadora">
+    <b> Calculadora</b>
+    <p>{{ painel }}</p>
+  
+    <table>
+      <tr>
+        <td colspan="2">
+          <button class="limpar" (click)="apagar()" style="width: 110px;">AC</button>
+        </td>
+        <td>
+          <button class="btnDivisao" id = "operacoes" (click)="addOperation('/')">/</button>
+        </td>
+        <td>
+          <button class="btnMultiplicacao" id = "operacoes" (click)="addOperation('*')">*</button>
+        </td>
+      </tr>
+      <tr>
+        <td><button (click)="teclar('7')">7</button></td>
+        <td><button (click)="teclar('8')">8</button></td>
+        <td><button (click)="teclar('9')">9</button></td>
+        <td><button class="btnSubtracao" id = "operacoes" (click)="addOperation('-')">-</button></td>
+      </tr>
+      <tr>
+        <td><button (click)="teclar('4')">4</button></td>
+        <td><button (click)="teclar('5')">5</button></td>
+        <td><button (click)="teclar('6')">6</button></td>
+        <td><button class="btnSoma" id = "operacoes" (click)="addOperation('+')">+</button></td>
+      </tr>
+      <tr>
+        <td><button (click)="teclar('1')">1</button></td>
+        <td><button (click)="teclar('2')">2</button></td>
+        <td><button (click)="teclar('3')">3</button></td>
+        <td rowspan="2"><button (click)="calcular()" style="height: 110px;" id="calcular">=</button></td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <button (click)="teclar('0')" style="width: 110px;">0</button>
+        </td>
+        <td><button (click)="teclar('.')">.</button></td>
+      </tr>
+    </table>
+  </div>
+  

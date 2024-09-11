@@ -1,0 +1,72 @@
+
+
+b {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.calculadora {
+  background-color: rgba(8, 171, 236, 0.877);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+  padding: 15px;
+}
+
+button {
+  height: 50px;
+  width: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 2px;
+  color: rgb(0, 0, 0); 
+}
+
+.limpar {
+  color: black; 
+  background-color: rgb(231, 34, 8);
+  border: none;
+}
+
+#numeros {
+  background-color: rgb(0, 0, 0);
+  border: none;
+}
+
+#operacoes {
+  background-color: rgb(228, 170, 10);
+  border: none;
+}
+
+#calcular {
+  background-color: green;
+  border: none;
+}
+
+.calculaDora td:hover {
+  background-color: rgb(253, 253, 253);
+}
+
+p {
+  background-color: rgba(255, 255, 255, 0.877);
+  color: black;
+  width: 215px;
+  height: 40px;
+  margin: 5px;
+  font-size: 20px;
+  text-align: right;
+  padding: 5px;
+}
+
+button[id="numeros"] {
+  color: white; 
+  background-color: black; 
+}
+
+button[id="operacoes"] {
+  color: white; 
+  background-color: orange; 
+}
